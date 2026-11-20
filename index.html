@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow Lake</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎣</text></svg>" />
+  </head>
+  <body>
+    <main class="stage" id="stage">
+      <canvas id="game" aria-label="Fishing game"></canvas>
+      <header class="hud">
+        <div class="brand">Hollow Lake</div>
+        <div class="stats">
+          <span id="money" title="Money"></span>
+          <span id="clock" title="Time"></span>
+          <span id="weather" title="Weather"></span>
+          <span id="karma" title="Karma boosts your luck. Earn it by releasing fish."></span>
+          <span id="specials" title="The market pays double for these today"></span>
+        </div>
+        <nav class="buttons">
+          <button id="btn-cut" hidden>Cut line <kbd>R</kbd></button>
+          <button id="btn-shop">Shop <kbd>S</kbd></button>
+          <button id="btn-kitchen">Kitchen</button>
+          <button id="btn-crew">Crew</button>
+          <button id="btn-journal">Journal <kbd>J</kbd></button>
+          <button id="btn-mute" aria-label="Toggle sound">Sound on</button>
+        </nav>
+      </header>
+      <div class="row-controls" id="row-controls" hidden>
+        <button id="btn-row-left" aria-label="Row left">◀ Row</button>
+        <button id="btn-row-right" aria-label="Row right">Row ▶</button>
+      </div>
+      <div class="hint" id="hint"></div>
+      <div class="toast" id="toast"></div>
+      <div class="modal" id="modal" hidden>
+        <div class="card" id="modal-card"></div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
